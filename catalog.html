@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>nerds каталог</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="nav-wrap">
+        <div class="site-logo">
+          <a href="index.html"><img src="img/nerds-logo.png" alt="NERDS"></a>
+          <h1 class="visually-hidden">веб-студия нёрдз</h1>
+        </div>
+        <div class="header-nav">
+          <div class="headernav"><a href="index.html"><span>студия</span></a></div>
+          <div class="headernav"><a href=""><span>клиенты</span></a></div>
+          <div class="active-headernav"><a href="catalogue.html"><span>магазин</span></a></div>
+          <div class="headernav"><a href=""><span>контакты</span></a></div>
+        </div>
+        <div class="shop-cart">
+          <a href=""><span>корзина</span>
+          </a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="shop-title">
+      <div class="shoptitle-h-wrap">
+        <h2>Магазин готовых шаблонов</h2>
+      </div>
+    </section>
+    <div class="content-wrap">
+      <section class="filter">
+        <form action="/echo" method="post" enctype="multipart/form-data">
+
+          <div class="range-filter">
+
+            <h2 class="filters-title">Стоимость:</h2>
+
+            <div class="range-controls">
+              <div class="scale "><div class="bar" style="width:60%;"></div></div>
+              <div class="toggle min-toggle"></div>
+              <div class="toggle max-toggle"></div>
+            </div>
+
+            <div class="price-controls">
+              <lable class="min-wrapper">от <input class="min-price" type="text" value="0"></lable>
+              <lable class="max-wrapper">до <input class="max-price" type="text" value="15 000"></lable>
+            </div>
+
+          </div>
+
+          <div class="grid">
+
+            <h2 class="filters-title filters-title--grid">Сетка:</h2>
+
+            <label><input type="radio" value="r" name="rb" checked><span></span>Адаптивная</label>
+            <label><input type="radio" value="r" name="rb"><span></span>Фиксированная</label>
+            <label><input type="radio" value="r" name="rb"><span></span>Резиновая</label>
+
+          </div>
+
+          <div class="features">
+
+            <h2 class="filters-title filters-title--features">Особенности:</h2>
+
+            <label><input type="checkbox" value="1" checked><span></span>Слайдер</label>
+            <label><input type="checkbox" value="2"><span></span>Блок преимуществ</label>
+            <label><input type="checkbox" value="3" checked><span></span>Новости</label>
+            <label><input type="checkbox" value="4"><span></span>Галерея</label>
+            <label><input type="checkbox" value="5"><span></span>Корзина</label>
+
+          </div>
+
+          <input class="filters-btn" type="submit" value="показать">
+
+        </form>
+      </section>
+      <section class="content-section">
+
+          <div class="sorting clearfix">
+
+                    <div class="sorting-menu">
+                      <div>
+                        <h3 class="sorting-title">Сортировать:</h3>
+                      </div>
+                      <ul class="sorting-list">
+                        <li><a class="sorting-menu-item" href="#">По цене</a>
+                        </li>
+                        <li><a class="sorting-menu-item" href="#">По типу</a>
+                        </li>
+                        <li><a class="sorting-menu-item" href="#">По названию</a>
+                        </li>
+                        <li>
+                          <div class="sorting-menu-triangle-down">
+                            <a class="sort-btn icon-down-dir" href="#">
+                              <img src="img/icon-down-dir.png" alt="сортировать"></a>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="sorting-menu-triangle-up">
+                            <a class="sort-btn icon-up-dir btn-checked" href="#"><img src="img/icon-up-dir.png" alt="сортировать"></a>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+
+                </div>
+
+          <div class="mockup-grid">
+
+          <a class="catalog-item" href="#">
+
+            <div class="catalog-image"><img src="img/img-sedona.jpg.png"  width="360" height="572" alt="poduct-pic"></div>
+
+            <div class="description">
+              <div class="description-wrap">
+              <div class="description-title">Sedona</div><br>
+              <div class="description-p">Интернет-магазин с&nbsp;личным кабинетом</div>
+              <div class="btn btn-buy">10 000 р.</div>
+              </div>
+            </div>
+
+                    </a>
+
+          <a class="catalog-item" href="#">
+
+                        <div class="catalog-image"><img src="img/img-pink.jpg.png" width="360" height="572" alt="poduct-pic"></div>
+
+            <div class="description">
+              <div class="description-wrap">
+              <div class="description-title">Название очень длинное</div><br>
+              <div class="description-p">Описание очень очень очень очень очень очень длинное описание</div>
+              <div class="btn btn-buy">1 000 000 р.</div>
+              </div>
+            </div>
+
+                    </a>
+
+                    <a class="catalog-item" href="#">
+
+                        <div class="catalog-image"><img src="img/img-barbershop.jpg.png" width="360" height="572" alt="poduct-pic"></div>
+
+            <div class="description">
+              <div class="description-wrap">
+              <div class="description-title">Forte</div><br>
+              <div class="description-p">Интернет-магазин с&nbsp;личным кабинетом</div>
+              <div class="btn btn-buy">10 000 р.</div>
+              </div>
+            </div>
+
+                    </a>
+
+                    <a class="catalog-item" href="#">
+
+                        <div class="catalog-image"><img src="img/img-mishka.jpg.png" width="360" height="572" alt="poduct-pic"></div>
+
+            <div class="description">
+              <div class="description-wrap">
+              <div class="description-title">Modern</div><br>
+              <div class="description-p">Интернет-магазин с&nbsp;личным кабинетом</div>
+              <div class="btn btn-buy">10 000 р.</div>
+              </div>
+            </div>
+
+                    </a>
+
+          <a class="catalog-item" href="#">
+
+                        <div class="catalog-image"><img src="img/img-aplus.jpg.png" width="360" height="572" alt="poduct-pic"></div>
+
+            <div class="description">
+              <div class="description-wrap">
+              <div class="description-title">Avenue</div><br>
+              <div class="description-p">Интернет-магазин с&nbsp;личным кабинетом</div>
+              <div class="btn btn-buy">10 000 р.</div>
+              </div>
+            </div>
+
+                    </a>
+
+                    <a class="catalog-item" href="#">
+
+                        <div class="catalog-image"><img src="img/img-kvast.jpg.png" width="360" height="572" alt="poduct-pic"></div>
+
+            <div class="description">
+              <div class="description-wrap">
+              <div class="description-title">Dovetail</div><br>
+              <div class="description-p">Интернет-магазин с&nbsp;личным кабинетом</div>
+              <div class="btn btn-buy">10 000 р.</div>
+              </div>
+            </div>
+
+                    </a>
+
+
+          </div>
+
+        <div class="content-pagination">
+
+                    <a class="content-page content-page-active" href="#">1</a>
+                    <a class="content-page" href="#">2</a>
+                    <a class="content-page" href="#">3</a>
+                    <a class="content-page content-page-next" href="#">Следующая</a>
+
+                </div>
+      </section>
+    </div>
+  </main>
+  <footer>
+    <div class="footer-map">
+      <div class="footercontact-wrap">
+        <div class="footer-contact">
+          <h3>nёrds design studio</h3>
+          <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+          <p>тел. +7 (812) 275-75-75</p>
+          <div class="writeusbutton-wrap"><button class="writeus-button"><span>напишите нам</span></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-social">
+      <ul>
+        <li><a href="#"><img src="img/vk-icon.png" alt="vk-icon"></a></li>
+        <li><a href="#"><img src="img/fb-icon.png" alt="fb-icon"></a></li>
+        <li><a href="#"><img src="img/insta-icon.png" alt="insta-icon"></a></li>
+      </ul>
+      <div class="invitelink-discount">
+        <p class="friends-discount">Давайте дружить, это выгодно!</p>
+        <p class="percentnumber-discount">Скидка 10% для друзей из социальных сетей.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
