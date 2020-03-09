@@ -1252,3 +1252,153 @@ input[type="radio"] {
   background:#b63538;
   box-shadow:inset 0 4px 0 -2px #9b2d30;
 }
+
+ /*popup*/
+
+.popup-form {
+  height: 590px;
+  width: 960px;
+  background: #ffffff;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  position: absolute;
+  bottom: -10%;
+  left: 50%;
+  z-index: 1000;
+  display: none;
+}
+
+.popup-form--open {
+  display: block;
+}
+
+.popup-form__title {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 80px;
+  max-width: 780px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5px;
+}
+
+.popup-form__title h3 {
+  font-size: 45px;
+  line-height: 45px;
+  max-width: 370px;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.form-contacts {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+}
+
+.label-div {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.input-contacts-wrap {
+  max-width: 400px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+input.form__meet[type="text"] {
+  width: 360px;
+  height: 50px;
+  border: 2px solid #d7dcde;
+  border-radius: 2px;
+}
+
+input.form__meet--long[type="text"] {
+  width: 760px;
+  height: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 90px;
+  }
+
+.input-text-wrap {
+  width: 760px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form__meet::-webkit-input-placeholder {
+  color: #d7dcde;
+  padding-left: 15px;
+}
+
+.form__meet::-moz-placeholder {
+  color: #d7dcde;
+  padding-left: 15px;
+}
+
+.form__meet:-moz-placeholder {
+  color: #d7dcde;
+  padding-left: 15px;
+}
+
+.form__meet:-ms-input-placeholder {
+  color: #d7dcde;
+  padding-left: 15px;
+}
+
+.form__meet--long::-webkit-input-placeholder {
+  line-height: 20px
+}
+
+.form__meet--long::-moz-placeholder {
+  line-height: 20px
+
+}
+
+.form__meet--long:-moz-placeholder {
+  line-height: 20px
+
+}
+
+.form__meet--long:-ms-input-placeholder {
+  line-height: 20px
+}
+
+.popup-submit {
+  height: 50px;
+  width: 260px;
+  background-color: #fb565a;
+  font-family: "Roboto";
+  font-weight: normal;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #ffffff;
+  border-radius: 4px;
+  box-shadow: none;
+  border-color: #fb565a;
+  margin-top: 50px;
+  margin-left: 100px;
+}
+
+.popup-submit:hover {
+  background-color: #e74246;
+}
+
+.popup-submit:active {
+  background-color: #d7373b;
+}

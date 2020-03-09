@@ -167,7 +167,7 @@
     </section>
     <section class="our_partners">
       <div class="client">
-        <img src="img/logo-1.png copy.png" alt="html-academy">
+        <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-1.png copy.png" alt="html-academy"></a>
       </div>
       <div class="client">
         <img src="img/logo-2.png copy.png" alt="borodinskey">
@@ -189,6 +189,29 @@
           <p>тел. +7 (812) 275-75-75</p>
           <div class="writeusbutton-wrap"><button class="writeus-button"><span>напишите нам</span></button>
           </div>
+          <div class="popup-form popup-form--open">
+            <form action="https://echo.htmlacademy.ru/courses" method="post">
+              <div class="popup-form__title">
+                <div><h3>Напишите нам</h3></div>
+                <div class="popup-close"><img src="img/close-cross.png"></div>
+              </div>
+              <div class="form-contacts">
+                <div class="input-contacts-wrap">
+                  <div class="label-div"><label for="name">Ваше имя:</label></div>
+                  <input class="form__meet" type="text" placeholder="Имя Фамилия" id="name" required>
+                </div>
+                <div class="input-contacts-wrap">
+                  <div class="label-div"><label for="email">Ваш e-mail:</label></div>
+                  <input class="form__meet" type="text" placeholder="email@example.com" id="email" required>
+                </div>
+              </div>
+              <div class="input-text-wrap">
+                <div class="label-div"><label for="text">Текст письма:</label></div>
+                <input class="form__meet form__meet--long" type="text" placeholder="В свободной форме" id="text" required>
+              </div>
+              <input type="submit" class="popup-submit" value="отправить">
+            </form>
+          </div>
         </div>
       </div>
     </div>
@@ -204,6 +227,7 @@
       </div>
     </div>
   </footer>
+  <script src="js/js.js"></script>
 </body>
 </html>
 
