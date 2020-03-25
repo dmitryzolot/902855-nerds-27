@@ -11,12 +11,10 @@
 
   <header>
     <nav class="nav-panel">
-      <div class="site-logo">
-        <a href="index.html">
-          <img src="img/nerds-logo.png" alt="NERDS">
-          <h1 class="visually-hidden">HTML Academy: Нёрдс</h1>
-        </a>
-      </div>
+      <a class="site-logo" href="index.html">
+        <img src="img/nerds-logo.png" alt="NERDS">
+        <h1 class="visually-hidden">HTML Academy: Нёрдс</h1>
+      </a>
       <div class="site-navigation-items">
         <ul class="header-nav">
           <li><a href="index.html">Студия</a></li>
@@ -39,25 +37,24 @@
     <div class="content-wrap">
       <section class="filter">
         <form action="https://echo.htmlacademy.ru" method="post">
-          <div class="range-filter">
+          <fieldset class="range-filter">
             <h2 class="filters-title">Стоимость:</h2>
             <div class="range-controls">
               <div class="scale "><div class="bar"></div></div>
-              <div class="toggle min-toggle"></div>
-              <div class="toggle max-toggle"></div>
+              <div class="toggle min-toggle" tabindex="0"></div>
+              <div class="toggle max-toggle" tabindex="0"></div>
             </div>
             <div class="price-controls">
-              <lable class="min-wrapper">от
+              <label class="min-wrapper">от
                 <input class="min-price" type="text" value="0">
-              </lable>
-              <lable class="max-wrapper">до
+              </label>
+              <label class="max-wrapper">до
                 <input class="max-price" type="text" value="15 000">
-              </lable>
+              </label>
             </div>
-          </div>
-
-          <div class="grid">
-            <h2 class="filters-title filters-title--grid">Сетка:</h2>
+          </fieldset>
+          <fieldset class="grid">
+            <legend class="filters-title filters-title--grid">Сетка:</legend>
             <label class="grid-label">Адаптивная
               <input class="grid-input" type="radio" name="grid" value="adaptive" checked>
               <span></span>
@@ -70,10 +67,9 @@
               <input class="grid-input" type="radio" name="grid" value="rubber" disabled>
               <span></span>
             </label>
-          </div>
-
-          <div class="features">
-            <h2 class="filters-title filters-title--features">Особенности:</h2>
+          </fieldset>
+          <fieldset class="features">
+            <legend class="filters-title filters-title--features">Особенности:</legend>
             <label class="features-label">Слайдер
               <input class="features-input" type="checkbox" name="slider" checked>
               <span></span>
@@ -83,7 +79,7 @@
               <span></span>
             </label>
             <label class="features-label">Новости
-              <input class="features-input" type="checkbox" name="news" checked>
+              <input class="features-input" type="checkbox" name="news" disabled checked>
               <span></span>
             </label>
             <label class="features-label">Галерея
@@ -94,7 +90,7 @@
               <input class="features-input" type="checkbox" name="cart">
               <span></span>
             </label>
-          </div>
+          </fieldset>
           <button class="filters-btn" type="submit">Показать</button>
         </form>
       </section>
@@ -104,12 +100,12 @@
           <span class="sorting-title">Сортировать:</span>
           <div class="sorting-menu">
             <ul class="sorting-list">
-              <li><a class="sorting-menu-item" href="#">По цене</a></li>
+              <li><a class="sorting-menu-item sorting-menu-item-active" href="#">По цене</a></li>
               <li><a class="sorting-menu-item" href="#">По типу</a></li>
               <li><a class="sorting-menu-item" href="#">По названию</a></li>
             </ul>
             <div class="sort-icons">
-              <a class="sort-btn icon-down-dir" href="#">
+              <a class="sort-btn icon-down-dir sort-btn-active" href="#">
                 <img src="img/icon-down-dir.png" alt="сортировать">
               </a>
               <a class="sort-btn icon-up-dir btn-checked" href="#">
@@ -202,11 +198,11 @@
     </div>
 
     <section class="catalog-map">
-      <iframe src="https://yandex.ru/map-widget/v1/? um=constructor%3A008ab18a8e0af97a09987857944d1e66360d6045c1f56fcc914b1cf40dee9740&amp; source=constructor" width="1440" height="416"></iframe>
+      <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A008ab18a8e0af97a09987857944d1e66360d6045c1f56fcc914b1cf40dee9740&amp;source=constructor" width="1440" height="416"></iframe>
       <div class="footer-contact">
         <h3>nёrds design studio</h3>
         <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-        <p>тел. +7 (812) 275-75-75</p>
+        <a class="footer-contact-tel" href="tel:+78122757575" aria-label="Звонок на контактный номер телефона">тел. +7 (812) 275-75-75</a>
         <a class="writeus-button" href="contact.html">Напишите нам</a>
       </div>
     </section>
@@ -232,7 +228,7 @@
         <div class="form-contacts">
           <p class="input-contacts-wrap">
             <label for="name">Ваше имя:</label>
-            <input id="name" class="form__meet"  type="text" name="name" placeholder="Имя Фамилия"  required>
+            <input id="name" class="form__meet name"  type="text" name="name" placeholder="Имя Фамилия"  required>
           </p>
           <p class="input-contacts-wrap">
             <label for="email">Ваш e-mail:</label>
@@ -241,7 +237,7 @@
         </div>
         <p class="input-text-wrap">
           <label for="text">Текст письма:</label>
-          <textarea id="text" class="form__meet" type="text" name="message" placeholder="В свободной форме" required></textarea>
+          <textarea id="text" class="form__meet" name="message" placeholder="В свободной форме" required></textarea>
         </p>
         <input type="submit" class="popup-submit" value="Отправить">
       </fieldset>
